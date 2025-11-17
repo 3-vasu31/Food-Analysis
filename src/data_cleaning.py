@@ -172,6 +172,78 @@ def clean_and_match_location(df, Top_k_features):
     return df
 
 
+def map_cuisine(cuisine):
+    """
+    Maps cuisine strings to cuisine groups.
+    - If restaurant falls into 1 group: returns that group
+    - If restaurant falls into 2-3 groups: returns 'Multi-Cuisine'
+    - If falls into >3 groups or no match: returns 'Other'
+    """
+    if pd.isnull(cuisine):
+        return "Other"
+        
+    # Clean & split
+    cuisine_list = [c.strip().lower() for c in cuisine.split(",")]
+    
+    # Define cuisine groups
+    cuisine_groups = {
+        'Indian': [
+            'north indian', 'south indian', 'biryani', 'hyderabadi', 
+            'mughlai', 'punjabi', 'rajasthani', 'gujarati', 'bengali',
+            'kerala', 'andhra', 'chettinad', 'mangalorean', 'goan',
+            'indian', 'tandoor', 'curry', 'thali'
+        ],
+        'Street Food': [
+            'street food', 'fast food', 'chaat', 'rolls', 'momos',
+            'vada pav', 'pani puri', 'dosa', 'idli'
+        ],
+        'Desserts & Cafe': [
+            'desserts', 'mithai', 'ice cream', 'bakery', 'beverages',
+            'juice', 'shakes', 'tea', 'coffee', 'sweets', 'cafe'
+        ],
+        'Asian': [
+            'chinese', 'thai', 'japanese', 'korean', 'vietnamese',
+            'asian', 'pan asian', 'sushi', 'ramen', 'noodles',
+            'dimsum', 'mongolian'
+        ],
+        'Middle Eastern': [
+            'arabian', 'lebanese', 'mediterranean', 'turkish', 'persian',
+            'kebab', 'shawarma', 'falafel', 'hummus'
+        ],
+        'Western': [
+            'italian', 'mexican', 'american', 'continental', 'european',
+            'pizza', 'burger', 'sandwich', 'pasta', 'steak', 'french'
+        ],
+        'Specialty': [
+            'seafood', 'grill', 'bbq', 'barbecue', 'fusion',
+            'healthy food', 'salad', 'vegan', 'vegetarian'
+        ]
+    }
+    
+    # Find which groups this restaurant belongs to
+    matched_groups = set()
+    for group_name, keywords in cuisine_groups.items():
+        for cuisine_item in cuisine_list:
+            if cuisine_item in keywords:
+                matched_groups.add(group_name)
+                break
+    
+    # Determine output
+    if len(matched_groups) == 1:
+        # Single group
+        return list(matched_groups)[0]
+    elif 2 <= len(matched_groups) <= 3:
+        # Multi-cuisine (2-3 groups)
+        return 'Two-Or-Three-Cuisine'
+    elif len(matched_groups) > 3:
+        # Too many groups - likely noise
+        return 'Multi-Cuisine'
+    else:
+        # No match found
+        return 'Other'
+
+
+
 def clean_online_order_and_book_table(df):
     
     # Clean 'online_orderd' and 'book_table' columns
