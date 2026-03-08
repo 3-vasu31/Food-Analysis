@@ -200,7 +200,7 @@ Interactive visualizations selectable via a dropdown:
 - **Online Order vs Rating** — box plot comparing ratings for restaurants with and without online ordering.
 - **Votes vs Rating** — scatter plot with correlation coefficient.
 
-<video src="DemoVideos/DataAnalysis.mp4" controls width="100%"></video>
+[![Watch Demo](https://img.youtube.com/vi/mONGxRzaV9A/hqdefault.jpg)](https://youtu.be/mONGxRzaV9A)
 
 ### 4. Insights
 
@@ -214,7 +214,8 @@ Deeper pattern discovery across five categories:
 
 Each section includes auto-generated **Key Insights** callouts highlighting the most notable findings.
 
-<video src="DemoVideos/Insights.mp4" controls width="100%"></video>
+
+[![Watch Demo](https://img.youtube.com/vi/uQB3o5hwooA/hqdefault.jpg)](https://youtu.be/uQB3o5hwooA)
 
 ### 5. Predictions
 
@@ -231,7 +232,7 @@ The ML page with on-demand model training:
 - **Feature Importance** — aggregated importance bar chart for tree-based models.
 - **Make a Prediction** — fill in location, cuisine, restaurant type, online order, table booking, and cost/rating → get an instant prediction with a "What does this mean?" explanation.
 
-<video src="DemoVideos/Predictiions01.mp4" controls width="100%"></video>
+[![Watch Demo](https://img.youtube.com/vi/J8V6sj7zcVc/hqdefault.jpg)](https://youtu.be/J8V6sj7zcVc)
 
 ---
 
