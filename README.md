@@ -200,6 +200,10 @@ https://github.com/3-vasu31/Food-Analysis/blob/main/DemoVideos/OverviewPage__01.
 
 ![Overview Demo](DemoVideos\OverviewPage__01.gif)
 
+## Demo Video
+
+[![Watch the Demo](https://youtu.be/luDHJXc1gXo)](https://www.youtube.com/watch?v=luDHJXc1gXo)
+
 ### 3. Data Analysis
 
 Interactive visualizations selectable via a dropdown:
