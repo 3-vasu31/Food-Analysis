@@ -189,7 +189,7 @@ A bird's-eye view of the cleaned dataset:
 <!-- https://github.com/user-attachments/assets/demo-overview -->
 
 <!-- https://github.com/user-attachments/assets/demo-overview -->
-https://github.com/3-vasu31/Food-Analysis/blob/main/DemoVideos/OverviewPage.mp4
+https://github.com/3-vasu31/Food-Analysis/blob/main/DemoVideos/OverviewPage__01.gif
 
 <!-- <video src="DemoVideos\OverviewPage.mp4" controls width="100%"></video> -->
 
