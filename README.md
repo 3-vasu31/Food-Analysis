@@ -186,11 +186,17 @@ A bird's-eye view of the cleaned dataset:
 - **Categorical distributions**: top locations, cuisines, online order and table booking availability as bar charts.
 - **Sample data** viewer and a **CSV download** button for the cleaned dataset.
 
-https://github.com/user-attachments/assets/demo-overview
+<!-- https://github.com/user-attachments/assets/demo-overview -->
 
-https://github.com/user-attachments/assets/demo-overview
+<!-- https://github.com/user-attachments/assets/demo-overview -->
+https://github.com/3-vasu31/Food-Analysis/blob/main/DemoVideos/OverviewPage.mp4
 
-<video src="DemoVideos/OverviewPage.mp4" controls width="100%"></video>
+<!-- <video src="DemoVideos\OverviewPage.mp4" controls width="100%"></video> -->
+
+
+<video width="600" controls>
+  <source src="DemoVideos\OverviewPage.mp4" type="video/mp4">
+</video>
 
 ### 3. Data Analysis
 
