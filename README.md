@@ -194,9 +194,11 @@ https://github.com/3-vasu31/Food-Analysis/blob/main/DemoVideos/OverviewPage.mp4
 <!-- <video src="DemoVideos\OverviewPage.mp4" controls width="100%"></video> -->
 
 
-<video width="600" controls>
+<!-- <video width="600" controls>
   <source src="DemoVideos\OverviewPage.mp4" type="video/mp4">
-</video>
+</video> -->
+
+![Overview Demo](DemoVideos\OverviewPage__01.gif)
 
 ### 3. Data Analysis
 
